@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 10;
+
+}
+
+.background-div {
+    position: fixed;
+    /* 或者使用 absolute，但你需要确保它有包含块 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pic.jpg');
+    /* 替换为你的图片路径 */
+    background-size: cover;
+    /* 使图片覆盖整个元素 */
+    background-position: center;
+    /* 将图片居中 */
+    background-repeat: no-repeat;
+    /* 防止图片重复 */
+    z-index: -1;
+    /* 确保它位于其他内容之后 */
+}
+
+.calculator {
+    background-color: #d4eaf7;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border: solid 1px #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 15%;
+
+}
+
+
+#result {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.clear {
+    background-color: #e86b4c;
+}
+
+.number,
+.decimal {
+    background-color: #fff;
+
+}
+
+.operator {
+    background-color: #3075b0;
+    color: #fff;
+}
+
+.equals {
+    background-color: #f69960;
+    color: #fff;
+    grid-row: span 3;
+}
