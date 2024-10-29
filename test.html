@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="background-div"></div>
+    <div class="container">
+        <h1>四则运算题目生成器</h1>
+        <div id="question"></div>
+        <button onclick="generateQuestion()">获得题目</button>
+        <input type="text" id="answer" placeholder="确认答案">
+        <button onclick="checkAnswer()">确认答案</button>
+        <button onclick="GoToPage1()" class="pro">返回计算器</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
